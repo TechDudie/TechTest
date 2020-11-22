@@ -1,66 +1,9 @@
-
-local S = mobs.intllib
--- Bee by KrupnoPavel
-mobs:register_mob("mobs_animal:bee", {
-	type = "animal",
-	passive = true,
-	hp_min = 1,
-	hp_max = 2,
-	armor = 200,
-	collisionbox = {-0.2, -0.01, -0.2, 0.2, 0.5, 0.2},
-	visual = "mesh",
-	mesh = "mobs_bee.x",
-	textures = {
-		{"mobs_bee.png"},
-	},
-	makes_footstep_sound = false,
-	sounds = {
-		random = "mobs_bee",
-	},	
-	walk_velocity = 1,
-	jump = true,
-	drops = {
-		{name = "mobs:honey", chance = 2, min = 1, max = 2},
-	},
-	water_damage = 2,
-	lava_damage = 2,
-	light_damage = 0,
-	fall_damage = 0,
-	fall_speed = -3,
-	animation = {
-		speed_normal = 15,
-		stand_start = 0,
-		stand_end = 30,
-		walk_start = 35,
-		walk_end = 65,
-	},
-	on_rightclick = function(self, clicker)
-		mobs:capture_mob(self, clicker, 50, 90, 0, true, "mobs_animal:bee")
-	end,
-})
-mobs:spawn({
-	name = "mobs_animal:bee",
-	nodes = {"group:flower"},
-	min_light = 10,
-	chance = 9000,
-	min_height = 0,
-	day_toggle = true,
-})
-mobs:register_egg("mobs_animal:bee", S("Bee"), "mobs_bee_inv.png", 0)
--- compatibility
-mobs:alias_mob("mobs:bee", "mobs_animal:bee")
--- honey
-minetest.register_craftitem(":mobs:honey", {
-	description = S("Honey"),
-	inventory_image = "mobs_honey_inv.png",
-	on_use = minetest.item_eat(4),
-})
 -- beehive (when placed spawns bee)
-minetest.register_node(":mobs:beehive", {
-	description = S("Beehive"),
+minetest.register_node(":techtest:beehive", {
+	description = "Beehive",
 	drawtype = "plantlike",
-	tiles = {"mobs_beehive.png"},
-	inventory_image = "mobs_beehive.png",
+	tiles = {"beehive.png"}
+	inventory_image = "beehive.png",
 	paramtype = "light",
 	sunlight_propagates = true,
 	walkable = true,
@@ -101,35 +44,15 @@ minetest.register_node(":mobs:beehive", {
 	end,
 })
 minetest.register_craft({
-	output = "mobs:beehive",
+	output = "techtest:beehive",
 	recipe = {
 		{"mobs:bee","mobs:bee","mobs:bee"},
-	}
-})
--- honey block
-minetest.register_node(":mobs:honey_block", {
-	description = S("Honey Block"),
-	tiles = {"mobs_honey_block.png"},
-	groups = {snappy = 3, flammable = 2},
-	sounds = default.node_sound_dirt_defaults(),
-})
-minetest.register_craft({
-	output = "mobs:honey_block",
-	recipe = {
-		{"mobs:honey", "mobs:honey", "mobs:honey"},
-		{"mobs:honey", "mobs:honey", "mobs:honey"},
-		{"mobs:honey", "mobs:honey", "mobs:honey"},
-	}
-})
-minetest.register_craft({
-	output = "mobs:honey 9",
-	recipe = {
-		{"mobs:honey_block"},
+		{"mobs:bee","mobs:bee","mobs:bee"},
 	}
 })
 -- beehive workings
 minetest.register_abm({
-	nodenames = {"mobs:beehive"},
+	nodenames = {"techtest:beehive"},
 	interval = 6,
 	chance = 6,
 	catch_up = false,
@@ -153,7 +76,7 @@ minetest.register_abm({
 			{x = pos.x - 4, y = pos.y - 3, z = pos.z - 4},
 			{x = pos.x + 4, y = pos.y + 3, z = pos.z + 4},
 			"group:flower") > 3 then
-			inv:add_item("beehive", "mobs:honey")
+			inv:add_item("beehive", "techtest:beeswax")
 		end
 	end
 })
