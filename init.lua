@@ -51,3 +51,17 @@ minetest.register_craft({
 	},
 	replacements={{'bucket:bucket_water','bucket:bucket_empty'}}
 })
+minetest.register_craftitem("techtest:hershey5", {
+        description = "Hershey Bar",
+        inventory_image = "hershey5.png",
+        on_use = minetest.item_eat(3,"techtest:hershey4),
+})
+minetest.register_craft({
+	output = "techtest:peppermint",
+	recipe = {
+		{"dye:red", "farming:mint_leaf", "dye:white"},
+		{"farming:mint_leaf", "farming:sugar", "farming:mint_leaf"},
+		{"dye:white", "farming:mint_leaf", "dye:red"}
+	},
+	replacements={{'bucket:bucket_water','bucket:bucket_empty'}}
+})
