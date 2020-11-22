@@ -1,13 +1,7 @@
-minetest.register_craftitem("techtest:gelatain", {
-    description = 'Gelatain',
-    inventory_image = 'gelatain.png'
-})
-
 minetest.register_craft({
-	output = "techtest:gelatin",
+	output = "techtest:blueberry_fruit_snacks",
 	recipe = {
-		{"bonemeal:bonemeal", "bonemeal:bonemeal", "bonemeal:bonemeal"},
-		{"bonemeal:bonemeal", "bonemeal:bonemeal", "bonemeal:bonemeal"},
-		{"bonemeal:bonemeal", "bonemeal:bonemeal", "bucket:bucket_water"},
+		{"bonemeal:gelatain_powder", "bucket:bucket_water"},
+		{"farming:blueberry", ""}
 	},
 })
