@@ -87,15 +87,3 @@ minetest.register_craftitem("techtest:hershey0", {
         inventory_image = "hershey5.png",
         on_use = minetest.item_eat(3),
 })
-minetest.register_craftitem("techtest:leather", {
-        description = "Artificial Leather",
-        inventory_image = "leather.png",
-})
-minetest.register_craft({
-	output = "techtest:leather",
-	recipe = {
-		{"dye:brown", "techtest:beeswax", "dye:brown"},
-		{"techtest:beeswax", "basic_materials:plastic_sheet", "techtest:beeswax"},
-		{"dye:brown", "techtest:beeswax", "dye:brown"},
-	},
-})
