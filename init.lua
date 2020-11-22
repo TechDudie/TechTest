@@ -9,6 +9,7 @@ minetest.register_craft({
 		{"bonemeal:gelatain_powder", "bucket:bucket_water"},
 		{"farming:blueberry", ""}
 	},
+	replacements={{'bucket:bucket_water','bucket:bucket_empty'}}
 })
 minetest.register_craftitem("techtest:raspberry_fruit_snacks", {
         description = "Raspberry Fruit Snacks",
@@ -21,4 +22,5 @@ minetest.register_craft({
 		{"bonemeal:gelatain_powder", "bucket:bucket_water"},
 		{"farming:raspberry", ""}
 	},
+	replacements={{'bucket:bucket_water','bucket:bucket_empty'}}
 })
