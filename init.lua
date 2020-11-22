@@ -26,7 +26,7 @@ minetest.register_craft({
 })
 minetest.register_craftitem("techtest:raspberry_fruit_snacks", {
         description = "Raspberry Fruit Snacks",
-        inventory_image = "Raspberry.png",
+        inventory_image = "raspberry.png",
         on_use = minetest.item_eat(4),
 })
 minetest.register_craft({
@@ -34,6 +34,20 @@ minetest.register_craft({
 	recipe = {
 		{"bonemeal:gelatain_powder", "bucket:bucket_water"},
 		{"farming:raspberry", ""}
+	},
+	replacements={{'bucket:bucket_water','bucket:bucket_empty'}}
+})
+minetest.register_craftitem("techtest:peppermint", {
+        description = "Peppermint Candy",
+        inventory_image = "peppermint.png",
+        on_use = minetest.item_eat(8),
+})
+minetest.register_craft({
+	output = "techtest:peppermint",
+	recipe = {
+		{"dye:red", "farming:mint_leaf", "dye:white"},
+		{"farming:mint_leaf", "farming:sugar", "farming:mint_leaf"},
+		{"dye:white", "farming:mint_leaf", "dye:red"}
 	},
 	replacements={{'bucket:bucket_water','bucket:bucket_empty'}}
 })
