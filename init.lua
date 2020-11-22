@@ -20,7 +20,7 @@ minetest.register_craft({
 	output = "techtest:blueberry_fruit_snacks",
 	recipe = {
 		{"bonemeal:gelatain_powder", "bucket:bucket_water"},
-		{"farming:blueberry", ""}
+		{"farming:blueberry", ""},
 	},
 	replacements={{'bucket:bucket_water','bucket:bucket_empty'}}
 })
@@ -33,7 +33,7 @@ minetest.register_craft({
 	output = "techtest:raspberry_fruit_snacks",
 	recipe = {
 		{"bonemeal:gelatain_powder", "bucket:bucket_water"},
-		{"farming:raspberry", ""}
+		{"farming:raspberry", ""},
 	},
 	replacements={{'bucket:bucket_water','bucket:bucket_empty'}}
 })
@@ -47,9 +47,8 @@ minetest.register_craft({
 	recipe = {
 		{"dye:red", "farming:mint_leaf", "dye:white"},
 		{"farming:mint_leaf", "farming:sugar", "farming:mint_leaf"},
-		{"dye:white", "farming:mint_leaf", "dye:red"}
+		{"dye:white", "farming:mint_leaf", "dye:red"},
 	},
-	replacements={{'bucket:bucket_water','bucket:bucket_empty'}}
 })
 minetest.register_craftitem("techtest:hershey5", {
         description = "Hershey Bar",
@@ -57,11 +56,34 @@ minetest.register_craftitem("techtest:hershey5", {
         on_use = minetest.item_eat(3,"techtest:hershey4),
 })
 minetest.register_craft({
-	output = "techtest:peppermint",
+	output = "techtest:hershey5",
 	recipe = {
-		{"dye:red", "farming:mint_leaf", "dye:white"},
-		{"farming:mint_leaf", "farming:sugar", "farming:mint_leaf"},
-		{"dye:white", "farming:mint_leaf", "dye:red"}
+		{"farming:chocolate", "farming:chocolate", "farming:chocolate"},
+		{"farming:chocolate", "farming:chocolate", "farming:chocolate"},
 	},
-	replacements={{'bucket:bucket_water','bucket:bucket_empty'}}
+})
+minetest.register_craftitem("techtest:hersheyr", {
+        description = "Hershey Bar",
+        inventory_image = "hershey4.png",
+        on_use = minetest.item_eat(3,"techtest:hershey3),
+})
+minetest.register_craftitem("techtest:hershey3", {
+        description = "Hershey Bar",
+        inventory_image = "hershey3.png",
+        on_use = minetest.item_eat(3,"techtest:hershey2),
+})
+minetest.register_craftitem("techtest:hershey2", {
+        description = "Hershey Bar",
+        inventory_image = "hershey2.png",
+        on_use = minetest.item_eat(3,"techtest:hershey1),
+})
+minetest.register_craftitem("techtest:hershey1", {
+        description = "Hershey Bar",
+        inventory_image = "hershey1.png",
+        on_use = minetest.item_eat(3,"techtest:hershey0),
+})
+minetest.register_craftitem("techtest:hershey0", {
+        description = "Hershey Bar",
+        inventory_image = "hershey5.png",
+        on_use = minetest.item_eat(3),
 })
