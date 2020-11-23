@@ -54,7 +54,7 @@ minetest.register_craft({
 minetest.register_craftitem("techtest:hershey5", {
         description = "Hershey Bar",
         inventory_image = "hershey5.png",
-        on_use = minetest.item_eat(3,"techtest:hershey4),
+        on_use = minetest.item_eat(3,"techtest:hershey4"),
 })
 minetest.register_craft({
 	output = "techtest:hershey5",
@@ -66,22 +66,22 @@ minetest.register_craft({
 minetest.register_craftitem("techtest:hersheyr", {
         description = "Hershey Bar",
         inventory_image = "hershey4.png",
-        on_use = minetest.item_eat(3,"techtest:hershey3),
+        on_use = minetest.item_eat(3,"techtest:hershey3"),
 })
 minetest.register_craftitem("techtest:hershey3", {
         description = "Hershey Bar",
         inventory_image = "hershey3.png",
-        on_use = minetest.item_eat(3,"techtest:hershey2),
+        on_use = minetest.item_eat(3,"techtest:hershey2"),
 })
 minetest.register_craftitem("techtest:hershey2", {
         description = "Hershey Bar",
         inventory_image = "hershey2.png",
-        on_use = minetest.item_eat(3,"techtest:hershey1),
+        on_use = minetest.item_eat(3,"techtest:hershey1"),
 })
 minetest.register_craftitem("techtest:hershey1", {
         description = "Hershey Bar",
         inventory_image = "hershey1.png",
-        on_use = minetest.item_eat(3,"techtest:hershey0),
+        on_use = minetest.item_eat(3,"techtest:hershey0"),
 })
 minetest.register_craftitem("techtest:hershey0", {
         description = "Hershey Bar",
