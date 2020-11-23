@@ -80,3 +80,7 @@ minetest.register_abm({
 		end
 	end
 })
+minetest.register_craftitem("techtest:beeswax", {
+        description = "Beeswax",
+        inventory_image = "beeswax.png",
+})
