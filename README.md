@@ -18,3 +18,6 @@ My mod adds currently:
 - More uses for sulfur (if i can find more uses for sulfur)
 - Extractor
 - Compressor (I probably won't add the ability to compress coal into diamonds, because everyone and @ViniProTheBro say that's a bad idea and an economy spoiler.)
+# I'm not responsible for server or game crashes because i dont test this mod very often, so please test this mod first on a singleplayer world before updating.
+
+# If you have an objection to what i've added or am planning to add, create an issue.
