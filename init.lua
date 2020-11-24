@@ -86,6 +86,19 @@ minetest.register_craftitem("techtest:hershey1", {
 })
 minetest.register_craftitem("techtest:hershey0", {
         description = "Hershey Bar",
-        inventory_image = "hershey5.png",
+        inventory_image = "hershey0.png",
         on_use = minetest.item_eat(3),
+})
+-- make sure that stuff made fom artificial leather is 10x less good, durable, effective, etc.
+minetest.register_craftitem("techtest:leather", {
+        description = "Artificial Leather",
+        inventory_image = "leather.png",
+})
+minetest.register_craft({
+	output = "techtest:leather",
+	recipe = {
+		{"dye:brown", "techtest:beeswax", "dye:brown"},
+		{"techtest:beeswax", "basic_materials:plastic", "techtest:beeswax"},
+		{"dye:brown", "techtest:beeswax", "dye:brown"},
+	},
 })
