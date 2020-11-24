@@ -21,3 +21,5 @@ My mod adds currently:
 # I'm not responsible for server or game crashes because i dont test this mod very often, so please test this mod first on a singleplayer world before updating.
 
 # If you have an objection to what i've added or am planning to add, create an issue.
+
+If you dont play on Blocky Survival, the players must agree to what you want befor i add it.
