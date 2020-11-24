@@ -1,6 +1,6 @@
 minetest.register_node( ":techtest:mineral_pyrite", {
 	description = S("Pyrite Ore"),
-	tiles = { "default_stone.png^technic_mineral_pyrite.png" },
+	tiles = { "default_stone.png^pyrite.png" },
 	is_ground_content = true,
 	groups = {cracky=3, radioactive=1},
 	sounds = default.node_sound_stone_defaults(),
