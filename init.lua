@@ -102,3 +102,31 @@ minetest.register_craft({
 		{"dye:brown", "techtest:beeswax", "dye:brown"},
 	},
 })
+minetest.register_craftitem("techtest:caramel", {
+        description = "Caramel",
+        inventory_image = "caramel.png",
+	on_use = minetest.item_eat(2),
+})
+minetest.register_craft({
+	output = "techtest:caramel",
+	type = "cooking",
+	recipe = "farming:sugar",
+})
+minetest.register_craftitem("techtest:soda_bucket", {
+        description = "Soda Bucket",
+        inventory_image = "soda.png",
+	one_use = minetest.item_eat(3)
+})
+minetest.register_craft({
+	output = "techtest:soda_bucket",
+	type = "cooking",
+	recipe = "techtest:caramel",
+})
+minetest.register_craft({
+	output = "homedecor:soda_can",
+	recipe = {
+		{"techtest:aluminum", "", "techtest:aluminum"},
+		{"techtest:aluminum", "techtest:soda_bucket", "techtest:aluminum"},
+		{"techtest:aluminum", "techtest:aluminum", "techtest:aluminum"},
+	},
+})
