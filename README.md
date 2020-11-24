@@ -8,7 +8,7 @@ My mod adds currently:
 - Candy
 - Artificial Leather
 - Beeswax
-- Aluuminum (did i spell this wrong?)
+- Aluminum
 
 # What will i add?
 
