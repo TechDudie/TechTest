@@ -9,11 +9,12 @@ My mod adds currently:
 - Artificial Leather
 - Beeswax
 - Aluminum
+- Soda
+- Pyrite
 
 # What will i add?
 
 - Bauxite
-- Pyrite
 - Sulfur blocks
 - More uses for sulfur (if i can find more uses for sulfur)
 - Extractor
