@@ -35,3 +35,8 @@ minetest.register_ore({
 	noise_params = metal_params,
 	noise_threshold = metal_threshold,
 })
+minetest.register_craft({
+	type = 'cooking',
+	recipe = "techtest:aluminum_lump",
+	output = "techtest:aluminum_ingot",
+})
