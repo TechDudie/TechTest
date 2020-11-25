@@ -18,6 +18,7 @@ My mod adds currently:
 - Sulfur blocks
 - More uses for sulfur (if i can find more uses for sulfur)
 - Extractor
+- Gems (unable to be mined, but instead you have to make them with a Gem Compressor.)
 - Compressor (I probably won't add the ability to compress coal into diamonds, because everyone and @ViniProTheBro say that's a bad idea and an economy spoiler.)
 
 # If you have an objection to what i've added or am planning to add, create an issue.
