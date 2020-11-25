@@ -66,7 +66,7 @@ minetest.register_craft({
 		{"farming:chocolate", "farming:chocolate", "farming:chocolate"},
 	},
 })
-minetest.register_craftitem("techtest:hersheyr", {
+minetest.register_craftitem("techtest:hershey4", {
         description = "Hershey Bar",
         inventory_image = "hershey4.png",
         on_use = minetest.item_eat(3,"techtest:hershey3"),
