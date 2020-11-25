@@ -26,7 +26,7 @@ minetest.register_tool("techtest:match", {
 				and creative.is_enabled_for(player_name)) then
 			-- Wear tool
 			local wdef = itemstack:get_definition()
-			itemstack:add_wear(1000)
+			itemstack:add_wear(1000000)
 			-- Tool break sound
 			if itemstack:get_count() == 0 and wdef.sound and wdef.sound.breaks then
 				minetest.sound_play(wdef.sound.breaks, {pos = sound_pos, gain = 0.5})
@@ -38,8 +38,9 @@ minetest.register_tool("techtest:match", {
 
 minetest.register_craft({
 	output = "techtest:match",
-  type = "shapeless"
 	recipe = {
-		{"technic:sulfur","default:coal_lump","default:stick"}
+		{"default:coal_lump","technic:sulfur_lump","default:coal_lump"},
+		{"dye:red","default:stick","dye:red"},
+		{"","default:stick",""},
 	}
 })
