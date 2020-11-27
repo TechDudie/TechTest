@@ -145,3 +145,42 @@ minetest.register_craft({
 		{"", "", "farming:sugar"},
 	},
 })
+minetest.register_craftitem("techtest:wchoco_ppmpretzel", {
+        description = "White Chocolate Peppermint Pretzel",
+        inventory_image = "wchoco_ppmpretzel.png",
+	on_use = minetest.item_eat(12)
+})
+minetest.register_craft({
+	output = "techtest:wchoco_ppmpretzel",
+	recipe = {
+		{"dye:red", "techtest:pretzel", "dye:white"},
+		{"farming:mint_leaf", "farming:cocoa_beans", "farming:mint_leaf"},
+		{"farming:sugar", "", "farming:sugar"},
+	},
+})
+minetest.register_craftitem("techtest:pretzel", {
+        description = "Pretzel",
+        inventory_image = "pretzel.png",
+	on_use = minetest.item_eat(8)
+})
+minetest.register_craft({
+	output = "techtest:pretzel",
+	recipe = {
+		{"farming:sugar", "mobs:bucket_milk", "farming:sugar"},
+		{"farming:flour", "bucket:bucket_water", "farming:flour"},
+		{"mobs:butter", "", "mobs:butter"},
+	},
+})
+minetest.register_craftitem("techtest:golden_pretzel", {
+	description = "Golden Pretzel",
+	inventory_image = "golden_pretzel.png",
+	on_use = minetest.item_eat(16)
+})
+minetest.register_craft({
+	output = "techtest:golden_pretzel",
+	recipe = {
+		{"", "default:gold_lump",""},
+		{"default:gold_lump", "techtest:pretzel", "default:gold_lump"},
+		{"", "default:gold_lump", ""},
+	},
+})
