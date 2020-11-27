@@ -135,7 +135,7 @@ minetest.register_craft({
 minetest.register_craftitem("techtest:candy_cane", {
         description = "Candy Cane",
         inventory_image = "candy_cane.png",
-	on_use = minetest.item_eat(7)
+	on_use = minetest.item_eat(6)
 })
 minetest.register_craft({
 	output = "techtest:candy_cane",
