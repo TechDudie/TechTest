@@ -132,3 +132,16 @@ minetest.register_craft({
 		{"techtest:aluminum", "techtest:aluminum", "techtest:aluminum"},
 	},
 })
+minetest.register_craftitem("techtest:candy_cane", {
+        description = "Candy Cane",
+        inventory_image = "candy_cane.png",
+	on_use = minetest.item_eat(7)
+})
+minetest.register_craft({
+	output = "techtest:candy_cane",
+	recipe = {
+		{"dye:red", "dye:white", "farming:sugar"},
+		{"", "farming:mint_leaf", "farming:sugar"},
+		{"", "", "farming:sugar"},
+	},
+})
