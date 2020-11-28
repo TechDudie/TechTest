@@ -1,6 +1,6 @@
 minetest.register_node( ":techtest:mineral_aluminum", {
 	description = S("Aluminum Ore"),
-	tiles = { "default_stone.png^technic_mineral_aluminum.png" },
+	tiles = { "default_stone.png^mineral_aluminum.png" },
 	is_ground_content = true,
 	groups = {cracky=3, radioactive=1},
 	sounds = default.node_sound_stone_defaults(),
