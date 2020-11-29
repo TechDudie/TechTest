@@ -124,6 +124,7 @@ minetest.register_craft({
 	type = "cooking",
 	recipe = "techtest:caramel",
 })
+-- i will not add the "rrplacements" variable, if i do, you can prouduce buckets from soda
 minetest.register_craft({
 	output = "homedecor:soda_can",
 	recipe = {
@@ -170,6 +171,7 @@ minetest.register_craft({
 		{"farming:flour", "bucket:bucket_water", "farming:flour"},
 		{"mobs:butter", "", "mobs:butter"},
 	},
+	replacements = {{"mobs:bucket_milk","bucket:bucket",},{"bucket:bucket_water","bucket:bucket"},}
 })
 minetest.register_craftitem("techtest:golden_pretzel", {
 	description = "Golden Pretzel",
