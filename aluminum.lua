@@ -39,4 +39,5 @@ minetest.register_craft({
 	type = 'cooking',
 	recipe = "techtest:aluminum_lump",
 	output = "techtest:aluminum_ingot",
+	time = 20,
 })
