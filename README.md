@@ -21,4 +21,9 @@ My mod adds currently:
 - Gems (unable to be mined, but instead you have to make them with a Gem Compressor.)
 - Compressor (You can compress coal into diamonds, however, you need 20 coal for a diamond shard, which makes 180 coal for a diamond.)
 
+# Credits
+Matches - copied and edited frrom the "fire" mod.
+beehive.png - copied from the "mobs_redo" mod.
+mobs_bee_inv.png - also copied from the "mobs_redo" mod.
+
 # If you have an objection to what i've added or am planning to add, create an issue.
