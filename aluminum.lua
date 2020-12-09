@@ -1,5 +1,5 @@
 minetest.register_node( ":techtest:mineral_aluminum", {
-	description = S("Aluminum Ore"),
+	description = "Aluminum Ore",
 	tiles = { "default_stone.png^mineral_aluminum.png" },
 	is_ground_content = true,
 	groups = {cracky=3, radioactive=1},
@@ -7,11 +7,11 @@ minetest.register_node( ":techtest:mineral_aluminum", {
 	drop = "techtest:aluminum_lump",
 })
 minetest.register_craftitem(":techtest:aluminum_lump", {
-	description = S("Aluminum Lump"),
+	description = "Aluminum Lump",
 	inventory_image = "aluminum_lump.png",
 })
 minetest.register_craftitem(":technic:aluminum", {
-	description = S("Aluminum Ingot"),
+	description = "Aluminum Ingot",
 	inventory_image = "aluminum.png",
 })
 local metal_params = {
