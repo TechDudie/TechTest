@@ -1,5 +1,5 @@
 minetest.register_node( ":techtest:mineral_pyrite", {
-	description = S("Pyrite Ore"),
+	description = "Pyrite Ore",
 	tiles = { "default_stone.png^pyrite.png" },
 	is_ground_content = true,
 	groups = {cracky=3, radioactive=1},
@@ -7,7 +7,7 @@ minetest.register_node( ":techtest:mineral_pyrite", {
 	drop = "techtest:pyrite_crystal",
 })
 minetest.register_craftitem(":techtest:pyrite_crystal", {
-	description = S("Pyrite Crystal"),
+	description = "Pyrite Crystal",
 	inventory_image = "pyrite_crystal.png",
 })
 local metal_params = {
