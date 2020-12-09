@@ -2,7 +2,7 @@
 minetest.register_node(":techtest:beehive", {
 	description = "Beehive",
 	drawtype = "plantlike",
-	tiles = {"beehive.png"}
+	tiles = {"beehive.png"},
 	inventory_image = "beehive.png",
 	paramtype = "light",
 	sunlight_propagates = true,
