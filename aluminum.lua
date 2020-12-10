@@ -1,4 +1,4 @@
-minetest.register_node( ":techtest:mineral_aluminum", {
+minetest.register_node(":techtest:mineral_aluminum", {
 	description = "Aluminum Ore",
 	tiles = { "default_stone.png^mineral_aluminum.png" },
 	is_ground_content = true,
