@@ -141,9 +141,9 @@ minetest.register_craftitem("techtest:candy_cane", {
 minetest.register_craft({
 	output = "techtest:candy_cane",
 	recipe = {
-		{"dye:red", "dye:white", "farming:sugar"},
-		{"", "farming:mint_leaf", "farming:sugar"},
-		{"", "", "farming:sugar"},
+		{"farming:mint_leaf", "dye:white", "farming:mint_leaf"},
+		{"dye:red", "farming:sugar", "dye:red"},
+		{"farming:mint_leaf", "farming:mint_leaf", "dye:white"},
 	},
 })
 minetest.register_craftitem("techtest:wchoco_ppmpretzel", {
@@ -156,7 +156,7 @@ minetest.register_craft({
 	recipe = {
 		{"dye:red", "techtest:pretzel", "dye:white"},
 		{"farming:mint_leaf", "farming:cocoa_beans", "farming:mint_leaf"},
-		{"farming:sugar", "", "farming:sugar"},
+		{"farming:sugar", "techtest:candy_cane", "farming:sugar"},
 	},
 })
 minetest.register_craftitem("techtest:pretzel", {
@@ -169,7 +169,7 @@ minetest.register_craft({
 	recipe = {
 		{"farming:sugar", "mobs:bucket_milk", "farming:sugar"},
 		{"farming:flour", "bucket:bucket_water", "farming:flour"},
-		{"mobs:butter", "", "mobs:butter"},
+		{"mobs:butter", "mobs:egg", "mobs:butter"},
 	},
 	replacements = {{"mobs:bucket_milk","bucket:bucket",},{"bucket:bucket_water","bucket:bucket"},}
 })
