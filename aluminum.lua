@@ -6,11 +6,11 @@ minetest.register_node( ":techtest:mineral_aluminum", {
 	sounds = default.node_sound_stone_defaults(),
 	drop = "techtest:aluminum_lump",
 })
-minetest.register_craftitem(":techtest:aluminum_lump", {
+minetest.register_craftitem("techtest:aluminum_lump", {
 	description = "Aluminum Lump",
 	inventory_image = "aluminum_lump.png",
 })
-minetest.register_craftitem(":technic:aluminum", {
+minetest.register_craftitem("techtest:aluminum", {
 	description = "Aluminum Ingot",
 	inventory_image = "aluminum.png",
 })
@@ -38,6 +38,6 @@ minetest.register_ore({
 minetest.register_craft({
 	type = 'cooking',
 	recipe = "techtest:aluminum_lump",
-	output = "techtest:aluminum_ingot",
+	output = "techtest:aluminum",
 	time = 20,
 })
