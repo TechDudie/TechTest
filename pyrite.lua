@@ -1,4 +1,4 @@
-minetest.register_node( ":techtest:mineral_pyrite", {
+minetest.register_node(":techtest:mineral_pyrite", {
 	description = "Pyrite Ore",
 	tiles = { "default_stone.png^pyrite.png" },
 	is_ground_content = true,
@@ -6,7 +6,7 @@ minetest.register_node( ":techtest:mineral_pyrite", {
 	sounds = default.node_sound_stone_defaults(),
 	drop = "techtest:pyrite_crystal",
 })
-minetest.register_craftitem(":techtest:pyrite_crystal", {
+minetest.register_craftitem("techtest:pyrite_crystal", {
 	description = "Pyrite Crystal",
 	inventory_image = "pyrite_crystal.png",
 })
