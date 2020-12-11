@@ -1,4 +1,4 @@
-minetest.register_node(":techtest:mineral_aluminum", {
+minetest.register_node("techtest:mineral_aluminum", {
 	description = "Aluminum Ore",
 	tiles = { "default_stone.png^mineral_aluminum.png" },
 	is_ground_content = true,
@@ -25,7 +25,7 @@ local metal_params = {
 local metal_threshold = 0.55
 minetest.register_ore({
 	ore_type = "scatter",
-	ore = "techtest:aluminum",
+	ore = "techtest:mineral_aluminum",
 	wherein = "default:stone",
 	clust_scarcity = 8*8*8,
 	clust_num_ores = 4,
