@@ -2,6 +2,7 @@ dofile(minetest.get_modpath("techtest") .. "/beeswax.lua")
 dofile(minetest.get_modpath("techtest") .. "/aluminum.lua")
 dofile(minetest.get_modpath("techtest") .. "/pyrite.lua")
 dofile(minetest.get_modpath("techtest") .. "/matches.lua")
+dofile(minetest.get_modpath("techtest") .. "/gems.lua")
 minetest.register_craftitem("techtest:carrot_fruit_snacks", {
         description = "Carrot Fruit Snacks",
         inventory_image = "carrot.png",
