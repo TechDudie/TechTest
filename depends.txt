@@ -3,3 +3,4 @@ bucket
 farming
 dye
 basic_materials
+mobs_animal
