@@ -1,4 +1,4 @@
-minetest.register_node(":techtest:mineral_pyrite", {
+minetest.register_node("techtest:mineral_pyrite", {
 	description = "Pyrite Ore",
 	tiles = { "default_stone.png^pyrite.png" },
 	is_ground_content = true,
@@ -21,7 +21,7 @@ local metal_params = {
 local metal_threshold = 0.55
 minetest.register_ore({
 	ore_type = "scatter",
-	ore = "techtest:pyrite",
+	ore = "techtest:mineral_pyrite",
 	wherein = "default:stone",
 	clust_scarcity = 8*8*8,
 	clust_num_ores = 4,
