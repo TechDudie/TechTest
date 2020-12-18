@@ -14,7 +14,7 @@ local metal_params = {
 	offset = 0,
 	scale = 1,
 	spread = {x = 100, y = 100, z = 100},
-	seed = 227119984289,
+	seed = 495729293768,
 	octaves = 3,
 	persist = 0.7
 }
