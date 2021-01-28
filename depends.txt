@@ -4,3 +4,6 @@ farming
 dye
 basic_materials
 mobs_animal
+mesecons_materials
+default
+mobs
