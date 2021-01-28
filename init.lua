@@ -231,12 +231,6 @@ function make_color_bed( Colorname , hex , ratio)
 		})
 end
 
-minetest.override_item("default:bed",{		
-	recipe = {
-	{tostring("wool:red"), tostring("wool:red"), tostring("wool:red")},
-	{"group:wood", "group:wood", "group:wood"}}
-})
-
 make_color_bed("blue" , "#003579" , "175")
 make_color_bed("yellow" , "#FCF110" , "175")
 make_color_bed("green" , "#67EB1C" , "175")
